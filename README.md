@@ -23,6 +23,7 @@ create table article
 );
 ```
 User
+-----------
 ```
 -- auto-generated definition
 create table user
@@ -50,13 +51,16 @@ create table category
     id             int unsigned auto_increment comment 'ID'
         primary key,
     category_name  varchar(32)  not null comment '分类名称',
+
     category_alias varchar(32)  not null comment '分类别名',
     create_user    int unsigned not null comment '创建人ID',
     create_time    datetime     not null comment '创建时间',
     update_time    datetime     not null comment '修改时间',
     constraint fk_category_user
-        foreign key (create_user) references user (id)
+        foreign key (create_user) references user (id)    
 );
 
 ```
-
+使用golang语言beego框架   
+重写黑马bigevent项目  
+相关前端代码与java项目代码可寻找黑马课程资源
