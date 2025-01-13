@@ -1,5 +1,12 @@
+Big_event
+===========
+
+  使用golang语言beego框架     
+  重写黑马bigevent项目后端      
+  相关前端代码与java项目代码可寻找黑马课程资源  
+
 Mysql(DDL)
-==============
+------------------
 Article
 ------------
 ```
@@ -61,6 +68,3 @@ create table category
 );
 
 ```
-使用golang语言beego框架   
-重写黑马bigevent项目  
-相关前端代码与java项目代码可寻找黑马课程资源
